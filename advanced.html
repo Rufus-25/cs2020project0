@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Advanced Search</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <header id="advanced">
+      <span id="top_right">
+      <a href="index.html">Search</a>
+      </span>
+      <h3>Advanced Search</h3>
+    </header>
+    
+    <section class="advanced">
+      <h4>Find pages with...</h4>
+      <form action="https://www.google.com/search" class="p-3">
+        <div class="form-group">
+            <label for="#1" class="form-label">
+            all these words:
+            </label>
+            <input type="text" name="as_q" class="form-control" id="1">
+        </div>
+        <div class="form-group">
+          <label for="#2" class="form-label">
+          this exact word or phrase:
+          </label>
+          <input type="text" name="as_epq" class="form-control" id="2">
+        </div>
+        <div class="form-group">
+          <label for="#3" class="form-label">
+            any of these words
+          </label>
+          <input type="text" name="oq" class="form-control" id="3">
+        </div>
+        <div class="form-group">
+          <label for="#4" class="form-label">
+            none of these words:
+          </label>
+          <input type="text" name="eq" class="form-control" id="4">
+        </div>
+        <div class="form-group">
+          <label for="#5" class="form-label" id="number">
+            number ranges from:
+          </label>
+            <input type="number" class="form-control 26" name="as_nlo">
+              <span id="to">to</span>
+            <input type="number" class="form-control 26" name="as_nhi">
+        </div>
+        
+        <hr>
+        
+        <h4>Then narrow your results by...</h4>
+          <div class="form-group">
+            <label for="#1a">
+              language:
+            </label>
+            <select id="1a" class="form-control" name="lr">
+              <option>any language</option>
+              <option>Afrikaans</option>
+              <option>Arabic</option>
+              <option>Armenian</option>
+              <option>Belavusian</option>
+              <option>Bulgarian</option>
+              <option>Catalan</option>
+              <option>Chinese (Simplified)</option>
+              <option>Chinese (Traditional)</option>
+              <option>Croatian</option>
+              <option>Czech</option>
+              <option>Danish</option>
+              <option>Dutch</option>
+              <option>English</option>
+              <option>Esperanto</option>
+              <option>Estonian</option>
+              <option>Filipino</option>
+              <option>Finnish</option>
+              <option>French</option>
+              <option>German</option>
+              <option>Greek</option>
+              <option>Hebrew</option>
+              <option>Hindi</option>
+              <option>Hungarian</option>
+              <option>Icelandic</option>
+              <option>Indonesian</option>
+              <option>Italian</option>
+              <option>Japanese</option>
+              <option>Korean</option>
+              <option>Latvian</option>
+              <option>Lithuanian</option>
+              <option>Norwegian</option>
+              <option>Persian</option>
+              <option>Polish</option>
+              <option>Portuguese</option>
+              <option>Romanian</option>
+              <option>Russian</option>
+              <option>Serbian</option>
+              <option>Slovak</option>
+              <option>Slovenian</option>
+              <option>Spanish</option>
+              <option>Swahili</option>
+              <option>Swedish</option>
+              <option>Thai</option>
+              <option>Turkish</option>
+              <option>Ukranian</option>
+              <option>Vietnamese</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="#2a">
+              region:
+            </label>
+            <select id="2a" class="form-control" name="cr">
+              <option>any region</option>
+              <option>Afghanistan</option>
+              <option>Albanian</option>
+              <option>Algeria</option>
+              <option>American Samoa</option>
+              <option>Andorra</option>
+              <option>Belgium</option>
+              <option>Canada</option>
+              <option>Chile</option>
+              <option>China</option>
+              <option>Croatia</option>
+              <option>Czech</option>
+              <option>Danish</option>
+              <option>Dutch</option>
+              <option>England</option>
+              <option>Esperanto</option>
+              <option>Estonia</option>
+              <option>Filipino</option>
+              <option>Finnish</option>
+              <option>France</option>
+              <option>Germany</option>
+              <option>Greek</option>
+              <option>Hebrew</option>
+              <option>Hindi</option>
+              <option>Hungaria</option>
+              <option>Iceland</option>
+              <option>Indonesia</option>
+              <option>Italia</option>
+              <option>Japan</option>
+              <option>Korea</option>
+              <option>Latvia</option>
+              <option>Lithuania</option>
+              <option>Nigeria</option>
+              <option>Persia</option>
+              <option>Poland</option>
+              <option>Portugal</option>
+              <option>Rome</option>
+              <option>Russia</option>
+              <option>Serbia</option>
+              <option>Slovak</option>
+              <option>Slovenian</option>
+              <option>Spanish</option>
+              <option>Swahili</option>
+              <option>Swedish</option>
+              <option>Thailand</option>
+              <option>United Kingdom</option>
+              <option>United States</option>
+              <option>Yemen</option>
+              <option>Zambia</option>
+              <option>Zimbabwe</option>
+            </select>
+          </div>
+            
+          <div class="form-group">
+            <label for="#3a">
+              last update:
+            </label>
+            <select id="3a" class="form-control" name="as_qdr" value="all">
+              <option>anytime</option>
+              <option>past 24hours</option>
+              <option>past week</option>
+              <option>past month</option>
+              <option>past year</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="#4a" class="form-label">
+              Site or domain:
+            </label>
+            <input type="url" class="form-control" id="4a" name="as_sitesearch">
+          </div>
+          
+          <div class="form-group">
+            <label for="#5a" class="form-label">
+              terms appearing:
+            </label>
+            <select class="form-control" id="5a" name="as_occt" value="any">
+              <option>anywhere in the page</option>
+              <option>in the title of the page</option>
+              <option>in the text of the page</option>
+              <option>in the URL of the page</option>
+              <option>in links to the page</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="#6a" class="form-label">
+              <a href="#" >SafeSearch</a>
+            </label>
+            <select class="form-control" id="6a" name="safe" value="images">
+              <option>Show most relevant results</option>
+              <option>Filter explicit results</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="#7a" class="form-label">
+              file type:
+            </label>
+            <select class="form-control"id="7a" name="as_filetype">
+              <option>any format</option>
+              <option>Adobe Acrobat PDF (.pdf)</option>
+              <option>Adobe PostScript (.ps)</option>
+              <option>Autodesk DWF (.dwf)</option>
+              <option>Google Earth KML (.kml)</option>
+              <option>Google Earth KMZ (.kmz)</option>
+              <option>Microsoft Excel (.xls)</option>
+              <option>Microsoft PowerPoint (.ppt)</option>
+              <option>Microsoft Word (.doc)</option>
+              <option>Rich Text Format (.rtf)</option>
+              <option>Shockwave Flash (.swf)</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="#8a" class="form-label">
+              <a href="" >usage rights:</a>
+            </label>
+            <select class="form-control" id="8a" name="tbs">
+              <option>not filtered by license</option>
+              <option>free to use or share</option>
+              <option>free to use or share, even commercially</option>
+              <option>free to use share or modify</option>
+              <option>free to use, share or modify, even commercially</option>
+            </select>
+          </div>
+          
+          <div class="center">
+            <button type="submit" class="btn btn-primary">
+            Advanced Search
+            </button>
+          </div>
+      </form>
+      
+    </section>
+    
+    <footer id="advanced" class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <p>Nigeria</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <p>Settings</p>
+        </div>
+        <div class="col-1">
+          <p>Help</p>
+        </div>
+        <div class="col-1">
+          <p>Privacy</p>
+        </div>
+        <div class="col-1">
+          <p>Terms</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
